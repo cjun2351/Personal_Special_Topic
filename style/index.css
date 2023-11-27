@@ -68,22 +68,23 @@ header nav {
 .about-us-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .about-us-content .pic {
   background-color: #fff;
   max-width: 540px;
+  margin-right: 30px;
 }
 .about-us-content .pic img {
   vertical-align: middle;
   width: 100%;
   padding: 25px 25px 50px 25px;
 }
-
 .about-us-intro {
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  margin-left: 30px;
 }
 .about-us-intro .title h3 {
   font-size: 1.75rem;
@@ -116,10 +117,11 @@ header nav {
 }
 .exhibition-card-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .exhibition-card-list .card {
+  margin: 0 20px;
   max-width: 350px;
   display: flex;
   flex-direction: column;
@@ -142,7 +144,7 @@ header nav {
   letter-spacing: 0.1rem;
 }
 .exhibition-intro .date {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   letter-spacing: 0.1rem;
 }
 /* new */
