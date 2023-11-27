@@ -1,0 +1,142 @@
+/* general */
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+body {
+  min-height: 100%;
+  background-color: #0b1a2f;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+/* page-title */
+#page-title {
+  width: 100%;
+}
+#page-title .container h1 {
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
+#page-title .container .title {
+  border-bottom: 3px solid #fff;
+  max-width: 80%;
+  margin: auto;
+}
+/* hall-intro */
+
+#hall-intro {
+  width: 100%;
+}
+.banner .pic img {
+  width: 100%;
+}
+.hall-intro-content {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.intro-content .intro-title {
+  text-align: center;
+}
+.intro-content .intro-title h3 {
+  margin: 20px 0 15px 0;
+  letter-spacing: 0.1em;
+  font-size: 1.75em;
+}
+.intro-content .intro-para {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+/* features */
+#features {
+  width: 100%;
+}
+.feature-title h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+.feature-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.feature-card {
+  max-width: 35%;
+  text-align: center;
+}
+.feature-card .feature-sub-title {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+.feature-card .feature-para {
+  max-width: 80%;
+  margin: auto;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+/* hall-info */
+#hall-info {
+  width: 100%;
+}
+.info-map-content {
+  display: flex;
+  justify-content: center;
+}
+.info-content-table {
+  width: 50%;
+  margin: 0;
+  padding: 0 30px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.map-content {
+  width: 50%;
+  padding: 0 0 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+.info-table {
+  flex-grow: 1;
+  width: 100%;
+}
+.info-table table {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+}
+.info-table table tr {
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.info-table table tr th {
+  width: 30%;
+}
+.info-content-title h2 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+.map-title h2 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+.map-content iframe {
+  width: 100%;
+  flex-grow: 1;
+}

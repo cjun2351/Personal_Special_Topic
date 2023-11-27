@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glimpse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="img/Logo.svg" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/ticket.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="img/Logo.svg" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="about_us.html">關於展覽</a></li>
+          <li><a href="exhibition_hall.html">展館介紹</a></li>
+          <li><a href="photographer.html">攝影師介紹</a></li>
+          <li><a href="news.html">最新消息</a></li>
+          <li><a href="#">購票資訊</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- page-title -->
+      <section id="page-title">
+        <div class="container">
+          <div class="title">
+            <h1>購票資訊</h1>
+          </div>
+        </div>
+      </section>
+      <!-- exhibiton -->
+      <section id="exhibition">
+        <div class="container">
+          <div class="exhibition-intro">
+            <div class="banner">
+              <div class="pic">
+                <img
+                  src="img/ticket_banner_img.png"
+                  alt="《光影交錯：城市之夜》"
+                />
+              </div>
+            </div>
+            <div class="exhibition-intro-content">
+              <div class="exhibition-title">
+                <h2>《光影交錯：城市之夜》</h2>
+              </div>
+              <div class="exhibition-para">
+                <p>
+                  《光影交錯：城市之夜》將帶領您進入一場霓虹燈光下、星光點點的都市夜晚之旅。
+                  這次展覽專注於捕捉城市夜晚的獨特魅力，透過攝影師精湛的技藝，
+                  呈現出光影在城市中翩翩起舞的美麗場景。
+                </p>
+              </div>
+            </div>
+            <div class="exhibition-detail-content">
+              <div class="theme">
+                <div class="theme-title"><h3>展覽主題</h3></div>
+                <div class="theme-para"><p>「夜光城影」</p></div>
+              </div>
+              <div class="time">
+                <div class="time-title"><h3>展覽時間</h3></div>
+                <div class="time-para"><p>2024年4月15日至4月30日</p></div>
+              </div>
+              <div class="participants">
+                <div class="participants-title"><h3>參展攝影師</h3></div>
+                <div class="participants-para">
+                  <a href="photographer_detail.html">草間大地</a>
+                </div>
+              </div>
+              <div class="ticket-type">
+                <div class="ticket-type-title"><h3>票卷種類</h3></div>
+                <div class="ticket-type-para"><p>電子票卷</p></div>
+              </div>
+              <div class="refund">
+                <div class="refund-title"><h3>退款政策</h3></div>
+                <div class="refund-para">
+                  <p>
+                    我們理解生活變化，提供全額退款給因活動取消、提前通知無法參與、活動改期、以及購票錯誤的情況。
+                    請以書面通知我們客服部門，遵守相關規定。感謝您的合作。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ticket-buying -->
+      <section id="ticket-buying">
+        <div class="container">
+          <div class="buying-step">
+            <div class="current-step step">選擇票種</div>
+            <div class="step">繳費資訊</div>
+          </div>
+          <div class="buying-table">
+            <table>
+              <tr>
+                <th class="ticket-type">票種</th>
+                <th class="ticket-price">價格</th>
+                <th class="ticket-quantity">數量</th>
+              </tr>
+              <tr>
+                <td class="ticket-type">成人票</td>
+                <td class="ticket-price">NTD 300</td>
+                <td class="ticket-quantity">
+                  <button class="adult-minus minus">-</button
+                  ><input type="number" class="adult-input" value="0" /><button
+                    class="adult-plus plus"
+                  >
+                    +
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="ticket-type">半票</td>
+                <td class="ticket-price">NTD 150</td>
+                <td class="ticket-quantity">
+                  <button class="half-minus minus">-</button
+                  ><input type="number" class="half-input" value="0" /><button
+                    class="half-plus plus"
+                  >
+                    +
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="ticket-type">兒童票</td>
+                <td class="ticket-price">NTD 100</td>
+                <td class="ticket-quantity">
+                  <button class="children-minus minus">-</button
+                  ><input
+                    type="number"
+                    class="children-input"
+                    value="0"
+                  /><button class="children-plus plus">+</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="next-step-button button"><span>下一步</span></div>
+        </div>
+      </section>
+      <!-- ticket-fill-info -->
+      <section id="ticket-fill-info">
+        <div class="container">
+          <div class="buying-step">
+            <div class="step">選擇票種</div>
+            <div class="current-step step">繳費資訊</div>
+          </div>
+          <div class="buying-table-info">
+            <table>
+              <tr>
+                <th class="next-step-ticket-type">票種</th>
+                <th class="next-step-ticket-quantity">數量</th>
+                <th class="next-step-ticket-price">金額</th>
+              </tr>
+              <tr>
+                <td class="next-step-ticket-type">成人票</td>
+                <td class="next-step-ticket-quantity">1</td>
+                <td class="next-step-ticket-price">NTD 300</td>
+              </tr>
+              <tr>
+                <td class="next-step-ticket-type">半票</td>
+                <td class="next-step-ticket-quantity">0</td>
+                <td class="next-step-ticket-price">NTD 0</td>
+              </tr>
+              <tr>
+                <td class="next-step-ticket-type">兒童票</td>
+                <td class="next-step-ticket-quantity">2</td>
+                <td class="next-step-ticket-price">NTD 200</td>
+              </tr>
+              <tr>
+                <td class="next-step-ticket-total-price">總金額</td>
+                <td colspan="2" class="next-step-total-price">NTD 500</td>
+              </tr>
+            </table>
+          </div>
+          <form action="" class="fill-info">
+            <div class="form">
+              <div class="form-name input">
+                <label for="name">姓名</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="form-tel input">
+                <label for="tel">聯絡電話</label>
+                <input type="tel" id="tel" />
+              </div>
+              <div class="form-email input">
+                <label for="email">電子信箱</label>
+                <input type="email" id="email" />
+              </div>
+            </div>
+            <div class="form">
+              <div class="credit-card input">
+                <label for="credit-card">信用卡資料</label>
+                <input
+                  type="tel"
+                  inputmode="numeric"
+                  pattern="[0-9\s]{13,19}"
+                  autocomplete="cc-number"
+                  maxlength="19"
+                  id="credit-card"
+                />
+              </div>
+              <div class="expiry input">
+                <label for="expriy">到期日</label>
+                <input type="number" id="expriy" />
+              </div>
+              <div class="cvv input">
+                <label for="cvv">驗證碼</label>
+                <input type="number" id="cvv" />
+              </div>
+            </div>
+          </form>
+          <div class="step-button">
+            <div class="previous-step-button button">
+              <span>上一步</span>
+            </div>
+            <div class="confirm-button button">
+              <span>確認</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="left-content">
+            <div class="info-content">
+              <span class="contact-telephone">聯絡電話：0923456789 </span>
+              <span class="contact-email">電子郵件：glimpse@gmail.com</span>
+            </div>
+            <div class="follow-us-content">
+              <span class="follow-us">追蹤我們</span>
+              <div class="follow-us-link">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="navbar">
+              <ul>
+                <li><a href="about_us.html">關於展覽</a></li>
+                <li><a href="exhibition_hall.html">展館介紹</a></li>
+                <li><a href="photographer.html">攝影師介紹</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="#">購票資訊</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            本網站為緯育TibaMe前端設計工程師班學員專題作品，本平台僅供學習、展示之用。
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let nextStepBtn = document.querySelector(".next-step-button");
+      let previousStepBtn = document.querySelector(".previous-step-button");
+      nextStepBtn.addEventListener(
+        "click",
+        function () {
+          let ticketBuying = document.querySelector("#ticket-buying");
+          let ticketFillInfo = document.querySelector("#ticket-fill-info");
+          ticketBuying.style.display = "none";
+          ticketFillInfo.style.display = "block";
+        },
+        false
+      );
+      previousStepBtn.addEventListener(
+        "click",
+        function () {
+          let ticketBuying = document.querySelector("#ticket-buying");
+          let ticketFillInfo = document.querySelector("#ticket-fill-info");
+          ticketBuying.style.display = "block";
+          ticketFillInfo.style.display = "none";
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

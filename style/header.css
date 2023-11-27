@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  position: sticky;
+  background-color: #292f47;
+}
+.logo {
+  flex-grow: 1;
+  padding: 10px 30px;
+}
+.logo img {
+  min-width: 120px;
+  min-height: 100px;
+  vertical-align: middle;
+}
+header nav {
+  min-width: 40%;
+}
+.nav-list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+}
