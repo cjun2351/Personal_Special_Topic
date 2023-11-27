@@ -21,8 +21,8 @@ body {
 /* page-title */
 #page-title .container .title h1 {
   text-align: center;
-  font-size: 3em;
-  letter-spacing: 0.1em;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
 }
 #page-title .container .title {
   max-width: 80%;
@@ -45,18 +45,18 @@ body {
   flex-direction: column;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin: 10px 0;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
   margin: 10px 0;
 }
 p {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 a {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   text-decoration: none;
   color: #fff;
 }
@@ -74,7 +74,7 @@ a {
   height: 70px;
   padding: 10px 20px;
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 .current-step {
   background-color: #c89951;
@@ -120,7 +120,7 @@ input:focus {
 table td,
 th {
   padding: 15px;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 table button {
   background-color: #c89951;
@@ -144,7 +144,7 @@ table button {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
 }
 #ticket-buying {
@@ -202,13 +202,13 @@ table button {
 }
 .fill-info .input label {
   width: 200px;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 .fill-info .input input {
   width: 100%;
   height: 40px;
   border-radius: 5px;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 .button a {
@@ -221,5 +221,5 @@ table button {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  font-size: 1em;
+  font-size: 1rem;
 }

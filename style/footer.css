@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   background-color: #292f47;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 footer .container {
   max-width: 1200px;
@@ -22,8 +22,8 @@ footer .content {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
 }
 .info-content span {
   margin: 10px 0;
@@ -34,7 +34,7 @@ footer .content {
 .follow-us-link a {
   color: white;
   margin: 0 10px;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 .navbar ul {
@@ -49,8 +49,8 @@ footer .content {
 .navbar ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
 }
 
 .copyright {
@@ -58,6 +58,6 @@ footer .content {
 }
 .copyright p {
   margin: 10px 0;
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
 }

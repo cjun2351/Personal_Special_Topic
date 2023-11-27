@@ -21,8 +21,8 @@ body {
 /* page-title */
 #page-title .container .title h1 {
   text-align: center;
-  font-size: 3em;
-  letter-spacing: 0.1em;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
 }
 #page-title .container .title {
   max-width: 80%;
@@ -39,10 +39,10 @@ body {
 }
 .news-content th,
 td {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding: 50px 20px;
   text-align: left;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 .news-content td:last-of-type {
   text-align: center;
@@ -54,7 +54,7 @@ td {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  font-size: 1em;
+  font-size: 1rem;
 }
 .news-content tr {
   border-top: 3px solid #fff;

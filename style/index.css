@@ -19,8 +19,8 @@ body {
   max-width: 1200px;
 }
 .container h2 {
-  font-size: 2.5em;
-  letter-spacing: 0.1em;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
 }
 /* header */
 header {
@@ -52,8 +52,8 @@ header nav {
 .nav-list li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.25em;
-  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
 }
 /* banner */
 #banner {
@@ -72,8 +72,8 @@ header nav {
   padding: 0;
 }
 #banner .container h1 {
-  font-size: 5em;
-  letter-spacing: 0.1em;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
   font-weight: 700;
 }
 .banner-slogan {
@@ -83,7 +83,7 @@ header nav {
   font-family: "Sen", sans-serif;
 }
 .banner-slogan span:last-child {
-  padding-left: 1em;
+  padding-left: 1rem;
 }
 /* about-us */
 #about-us {
@@ -110,12 +110,12 @@ header nav {
   max-width: 50%;
 }
 .about-us-intro .title h3 {
-  font-size: 1.75em;
-  letter-spacing: 0.1em;
+  font-size: 1.75rem;
+  letter-spacing: 0.1rem;
 }
 .about-us-intro .content p {
-  font-size: 1.25em;
-  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
   line-height: 1.5em;
 }
 .about-us-intro .more-button {
@@ -129,7 +129,7 @@ header nav {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 /* recent-exhibitions */
 #recent-exhibitions {
@@ -161,13 +161,13 @@ header nav {
   color: #fff;
 }
 .exhibition-intro .title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin: 10px 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 .exhibition-intro .date {
   font-size: 1.25em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 /* new */
 #news {
@@ -179,9 +179,9 @@ header nav {
 }
 .news-content th,
 td {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding: 50px 20px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 .news-content td:last-of-type {
   text-align: center;
@@ -208,8 +208,8 @@ td {
 }
 .input label {
   width: 150px;
-  font-size: 1.25em;
-  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
 }
 .input input {
   height: 40px;
@@ -219,7 +219,7 @@ textarea {
   width: 100%;
   resize: none;
   border-radius: 5px;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 .submit-button {
   align-self: flex-end;
@@ -232,5 +232,5 @@ textarea {
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }

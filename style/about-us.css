@@ -24,8 +24,8 @@ body {
 }
 #page-title .container .title h1 {
   text-align: center;
-  font-size: 3em;
-  letter-spacing: 0.1em;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
 }
 #page-title .container .title {
   border-bottom: 3px solid #fff;
@@ -53,12 +53,12 @@ body {
   max-width: 60%;
 }
 .content h3 {
-  font-size: 1.75em;
-  letter-spacing: 0.05em;
+  font-size: 1.75rem;
+  letter-spacing: 0.05rem;
 }
 .content p {
-  font-size: 1.25em;
-  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
   line-height: 1.5em;
 }
 .pic {

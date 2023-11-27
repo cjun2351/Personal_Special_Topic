@@ -31,6 +31,6 @@ header nav {
 .nav-list li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.25em;
-  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
 }

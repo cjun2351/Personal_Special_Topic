@@ -21,8 +21,8 @@ body {
 /* page-title */
 #page-title .container .title h1 {
   text-align: center;
-  font-size: 3em;
-  letter-spacing: 0.1em;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
 }
 #page-title .container .title {
   border-bottom: 3px solid #fff;
@@ -34,8 +34,8 @@ body {
   width: 100%;
 }
 .outstanding-title h2 {
-  font-size: 2.5em;
-  letter-spacing: 0.1em;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
 }
 .photographer-list {
   display: flex;
@@ -62,24 +62,24 @@ body {
   color: #fff;
 }
 .name-content h3 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
   padding: 10px 0;
   margin: 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 .name-content p {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   margin: 0;
   padding: 10px 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 /* newbie */
 #newbie {
   width: 100%;
 }
 .newbie-title h2 {
-  font-size: 2.5em;
-  letter-spacing: 0.1em;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
 }
 
 @media (max-width: 768px) {
