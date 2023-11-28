@@ -38,16 +38,16 @@ header nav {
   height: 100vh;
   background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
     url("../img/Banner_img_1.jpg");
-  animation-name: bannerChange;
+  /* animation-name: bannerChange;
   animation-duration: 15s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@keyframes bannerChange {
+/* @keyframes bannerChange {
   0% {
     background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
       url("../img/Banner_img_1.png");
@@ -72,7 +72,7 @@ header nav {
     background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
       url("../img/Banner_img_5.jpg");
   }
-}
+} */
 
 #banner .container {
   padding: 0;
