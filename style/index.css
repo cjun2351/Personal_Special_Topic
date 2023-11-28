@@ -11,8 +11,6 @@ header {
   padding: 10px 30px;
 }
 .logo img {
-  min-width: 120px;
-  min-height: 100px;
   vertical-align: middle;
 }
 header nav {
@@ -32,6 +30,9 @@ header nav {
   letter-spacing: 0.1rem;
 }
 @media (max-width: 768px) {
+  .logo img {
+    width: 90px;
+  }
   header nav {
     display: none;
   }
