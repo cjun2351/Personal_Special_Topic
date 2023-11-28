@@ -4,6 +4,11 @@ footer {
   font-size: 1.25rem;
   height: 250px;
 }
+@media (max-width: 768px) {
+  footer {
+    height: 300px;
+  }
+}
 footer .container {
   max-width: 1200px;
   margin: auto;
