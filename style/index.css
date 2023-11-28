@@ -38,41 +38,12 @@ header nav {
   height: 100vh;
   background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
     url("../img/Banner_img_1.jpg");
-  /* animation-name: bannerChange;
-  animation-duration: 15s;
-  animation-iteration-count: infinite; */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* @keyframes bannerChange {
-  0% {
-    background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
-      url("../img/Banner_img_1.png");
-  }
-
-  25% {
-    background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
-      url("../img/Banner_img_2.jpg");
-  }
-
-  50% {
-    background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
-      url("../img/Banner_img_3.jpg");
-  }
-
-  75% {
-    background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
-      url("../img/Banner_img_4.jpg");
-  }
-
-  100% {
-    background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
-      url("../img/Banner_img_5.jpg");
-  }
-} */
 
 #banner .container {
   padding: 0;
