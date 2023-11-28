@@ -2,6 +2,7 @@ footer {
   width: 100%;
   background-color: #292f47;
   font-size: 1.25rem;
+  height: 250px;
 }
 footer .container {
   max-width: 1200px;

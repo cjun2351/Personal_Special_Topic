@@ -10,8 +10,6 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
-  display: grid;
-  grid-template-rows: 1fr auto;
 }
 .container {
   max-width: 1200px;
