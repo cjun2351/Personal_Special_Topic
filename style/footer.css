@@ -2,13 +2,9 @@ footer {
   width: 100%;
   background-color: #292f47;
   font-size: 1.25rem;
-  height: 250px;
+  border: 1px solid #292f47;
 }
-@media (max-width: 768px) {
-  footer {
-    height: 300px;
-  }
-}
+
 footer .container {
   max-width: 1200px;
   margin: auto;
@@ -65,4 +61,10 @@ footer .content {
   margin: 10px 0;
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
+}
+@media (max-width: 1024px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
 }

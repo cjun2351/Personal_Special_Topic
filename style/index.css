@@ -31,6 +31,11 @@ header nav {
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
 }
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
 /* banner */
 #banner {
   width: 100%;
@@ -62,7 +67,7 @@ header nav {
 }
 @media (max-width: 1024px) {
   #banner .container h1 {
-    font-size: clamp(2rem, 7.8125vw, 5rem);
+    font-size: clamp(1rem, 7vw, 5rem);
   }
 }
 /* about-us */
