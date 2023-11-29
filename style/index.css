@@ -3,12 +3,13 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   position: absolute;
   z-index: 3;
 }
 .logo {
   flex-grow: 1;
-  padding: 10px 30px;
+  padding: 10px;
 }
 .logo img {
   vertical-align: middle;
@@ -29,12 +30,65 @@ header nav {
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
 }
-@media (max-width: 768px) {
+header label {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+label .bar {
+  width: 80%;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+#hb {
+  display: none;
+}
+#hb:checked ~ .hb-nav-list {
+  display: block;
+  max-height: 100vh;
+  transition: 0.5s;
+}
+.hb-nav-list {
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0 0;
+  display: none;
+  transition: 0.5s;
+}
+.hb-nav-list li {
+  list-style: none;
+}
+.hb-nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 1.25rem;
+}
+.hb-nav-list li + li {
+  border-top: 1px solid #fff;
+}
+@media (max-width: 1200px) {
+  header {
+    background-color: #292f47;
+    position: fixed;
+  }
   .logo img {
-    width: 90px;
+    width: 80px;
   }
   header nav {
     display: none;
+  }
+  header label {
+    display: flex;
   }
 }
 /* banner */
