@@ -63,12 +63,20 @@ footer .content {
   letter-spacing: 0.1rem;
 }
 @media (max-width: 1024px) {
+  .right-content {
+    order: 1;
+  }
+  .left-content {
+    order: 5;
+  }
   footer .navbar ul {
     display: flex;
     flex-direction: column;
+    row-gap: 15px;
   }
   footer .content {
     display: flex;
     flex-direction: column;
+    padding: 10px 0;
   }
 }
