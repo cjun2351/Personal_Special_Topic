@@ -49,8 +49,8 @@ a {
   background-color: #c89951;
 }
 table {
-  margin: 30px 0;
-  width: 100%;
+  margin: 30px auto;
+  width: 90%;
   border-collapse: collapse;
 }
 table tr {
@@ -123,6 +123,9 @@ table button {
 #ticket-fill-info {
   display: none;
 }
+.buying-table-info table {
+  width: 90%;
+}
 .buying-table-info table tr:nth-of-type(5) {
   background-color: #292f47;
   border-bottom: none;
@@ -144,6 +147,8 @@ table button {
 }
 
 .fill-info {
+  width: 90%;
+  margin: auto;
   border: 1px solid #fff5;
   background-color: #292f47;
   border-radius: 10px;
