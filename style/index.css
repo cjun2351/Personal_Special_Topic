@@ -326,6 +326,12 @@ textarea {
   border-radius: 5px;
   font-size: 1.25rem;
 }
+input::placeholder {
+  color: #0006;
+}
+textarea::placeholder {
+  color: #0006;
+}
 .submit-button {
   align-self: flex-end;
 }

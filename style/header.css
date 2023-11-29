@@ -52,15 +52,15 @@ label .bar {
 #hb:checked ~ label {
   justify-content: center;
 }
-#hb:checked + label .bar-top {
+#hb:checked ~ label .bar-top {
   transform: rotate(-45deg) translateY(6px);
 }
 
-#hb:checked + label .bar-mid {
+#hb:checked ~ label .bar-mid {
   opacity: 0;
 }
 
-#hb:checked + label .bar-btm {
+#hb:checked ~ label .bar-btm {
   transform: rotate(45deg) translateY(-6px);
 }
 #hb {
@@ -88,7 +88,7 @@ label .bar {
   padding: 10px;
   font-size: 1.25rem;
 }
-.hb-nav-list li + li {
+.hb-nav-list li {
   border-top: 1px solid #fff;
 }
 @media (max-width: 1200px) {
