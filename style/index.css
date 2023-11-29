@@ -265,6 +265,8 @@ td {
 .contact-us-form form {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: auto;
 }
 .contact-us-form .input {
   display: flex;
