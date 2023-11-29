@@ -265,7 +265,8 @@ label .bar {
   width: 100%;
 }
 .news-content {
-  width: 100%;
+  margin: auto;
+  width: 90%;
   border-collapse: collapse;
 }
 .news-content th,
