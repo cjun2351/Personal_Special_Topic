@@ -186,6 +186,15 @@ label .bar {
     max-width: 60%;
     margin: 0;
   }
+  .about-us-intro .title h3 {
+    font-size: 1.5rem;
+  }
+  .about-us-intro .content p {
+    font-size: 1rem;
+  }
+  .button a {
+    font-size: 1rem;
+  }
 }
 /* recent-exhibitions */
 #recent-exhibitions {
@@ -258,6 +267,14 @@ td {
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
 }
+@media (max-width: 768px) {
+  .news-content th,
+  td {
+    font-size: 1rem;
+    padding: 50px 20px;
+    letter-spacing: 0.1rem;
+  }
+}
 /* contact-us */
 #contact-us {
   width: 100%;
@@ -313,5 +330,11 @@ textarea {
     flex-direction: column;
     row-gap: 10px;
     align-items: flex-start;
+  }
+  .input label {
+    font-size: 1rem;
+  }
+  .submit-button input {
+    font-size: 1rem;
   }
 }
