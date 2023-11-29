@@ -47,6 +47,21 @@ label .bar {
   height: 5px;
   border-radius: 50px;
   background-color: #fff;
+  transition: all 0.5s;
+}
+#hb:checked ~ label {
+  justify-content: center;
+}
+#hb:checked + label .bar-top {
+  transform: rotate(-45deg) translateY(6px);
+}
+
+#hb:checked + label .bar-mid {
+  opacity: 0;
+}
+
+#hb:checked + label .bar-btm {
+  transform: rotate(45deg) translateY(-6px);
 }
 #hb {
   display: none;

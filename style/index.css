@@ -45,6 +45,21 @@ label .bar {
   height: 5px;
   border-radius: 50px;
   background-color: #fff;
+  transition: all 0.5s;
+}
+#hb:checked ~ label {
+  justify-content: center;
+}
+#hb:checked + label .bar-top {
+  transform: rotate(-45deg) translateY(6px);
+}
+
+#hb:checked + label .bar-mid {
+  opacity: 0;
+}
+
+#hb:checked + label .bar-btm {
+  transform: rotate(45deg) translateY(-6px);
 }
 #hb {
   display: none;
@@ -59,7 +74,6 @@ label .bar {
   width: 100%;
   margin: 0;
   padding: 10px 0 0 0;
-
   transition: max-height 0.5s;
 }
 .hb-nav-list li {
@@ -70,9 +84,9 @@ label .bar {
   text-decoration: none;
   display: block;
   padding: 10px;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
-.hb-nav-list li + li {
+.hb-nav-list li {
   border-top: 1px solid #fff;
 }
 @media (max-width: 1200px) {
