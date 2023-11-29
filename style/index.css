@@ -50,9 +50,8 @@ label .bar {
   display: none;
 }
 #hb:checked ~ .hb-nav-list {
-  display: block;
-  max-height: 100vh;
-  transition: 0.5s;
+  max-height: 250px;
+  transition: max-height 0.5s;
 }
 .hb-nav-list {
   max-height: 0;
@@ -60,8 +59,8 @@ label .bar {
   width: 100%;
   margin: 0;
   padding: 10px 0 0 0;
-  display: none;
-  transition: 0.5s;
+
+  transition: max-height 0.5s;
 }
 .hb-nav-list li {
   list-style: none;
