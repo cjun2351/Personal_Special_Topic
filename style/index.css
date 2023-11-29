@@ -9,7 +9,7 @@ header {
 }
 .logo {
   flex-grow: 1;
-  padding: 10px;
+  padding: 10px 30px;
 }
 .logo img {
   vertical-align: middle;
