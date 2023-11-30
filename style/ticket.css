@@ -184,7 +184,9 @@ table button {
   border-radius: 5px;
   font-size: 1.25rem;
 }
-
+.fill-info .input input::placeholder {
+  color: #0006;
+}
 .button a {
   display: flex;
   align-items: center;

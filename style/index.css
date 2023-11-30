@@ -108,7 +108,7 @@ label .bar {
 #banner {
   width: 100%;
   height: 100vh;
-  background-image: url("/img/Banner_img_1.png");
+  background-image: url("../img/Banner_img_1.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
