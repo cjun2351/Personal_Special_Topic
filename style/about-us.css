@@ -45,4 +45,11 @@
   .about-us-content:nth-child(2) {
     flex-direction: column;
   }
+  .about-us-content .pic {
+    max-width: 320px;
+  }
+  .about-us-content .content {
+    padding: 0;
+    max-width: 80%;
+  }
 }
