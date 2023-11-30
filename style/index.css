@@ -108,13 +108,21 @@ label .bar {
 #banner {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%),
-    url("../img/Banner_img_1.png");
+  background-image: url("../img/Banner_img_1.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#banner::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%);
 }
 #banner .container {
   padding: 0;
@@ -327,9 +335,11 @@ textarea {
   font-size: 1.25rem;
 }
 input::placeholder {
+  padding: 5px;
   color: #0006;
 }
 textarea::placeholder {
+  padding: 5px;
   color: #0006;
 }
 .submit-button {
