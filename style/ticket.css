@@ -61,15 +61,15 @@ table tr:first-of-type {
   background-color: #292f47;
 }
 table .ticket-price {
-  width: 60%;
+  width: 45%;
 }
 table .ticket-type {
-  width: 10%;
+  width: 15%;
   text-align: left;
 }
 table .ticket-quantity {
-  width: 20%;
-  text-align: center;
+  width: 40%;
+  text-align: right;
 }
 table th.ticket-price {
   text-align: left;
