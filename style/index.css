@@ -111,9 +111,11 @@ label .bar {
   background-image: url("../img/Banner_img_1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  animation: changeBackground 10s infinite;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 1s;
 }
 #banner::after {
   content: "";
@@ -123,6 +125,26 @@ label .bar {
   top: 0;
   left: 0;
   background-image: linear-gradient(to top, #0b1a2f, #0b1a2f00 20%);
+}
+@keyframes changeBackground {
+  0% {
+    background-image: url("../img/Banner_img_1.png");
+  }
+  20% {
+    background-image: url("../img/Banner_img_2.png");
+  }
+  40% {
+    background-image: url("../img/Banner_img_3.jpg");
+  }
+  60% {
+    background-image: url("../img/Banner_img_4.png");
+  }
+  80% {
+    background-image: url("../img/Banner_img_5.jpg");
+  }
+  100% {
+    background-image: url("../img/Banner_img_1.png");
+  }
 }
 #banner .container {
   padding: 0;
