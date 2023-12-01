@@ -6,7 +6,7 @@ footer {
 }
 
 footer .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   padding: 0;
 }
@@ -45,7 +45,7 @@ footer .content {
   padding: 0;
 }
 .navbar ul li {
-  margin: 0 20px;
+  margin: 0 0 0 20px;
 }
 .navbar ul li a {
   color: white;
