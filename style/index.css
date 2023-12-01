@@ -132,7 +132,7 @@ label .bar {
   letter-spacing: 0.1rem;
   font-weight: 700;
   font-family: "Sen", sans-serif;
-  z-index: 5;
+  z-index: 2;
 }
 @media (max-width: 1024px) {
   #banner .container h1 {
