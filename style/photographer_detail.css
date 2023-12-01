@@ -64,14 +64,12 @@ p {
 #portifolio {
   width: 100%;
 }
-.portfolio-content {
-  display: flex;
-  flex-direction: column;
-  row-gap: 50px;
-}
+
 .portifolio-list {
   display: flex;
   justify-content: space-between;
+  row-gap: 20px;
+  flex-wrap: wrap;
 }
 .portifolio-card .pic {
   background-color: #fff;

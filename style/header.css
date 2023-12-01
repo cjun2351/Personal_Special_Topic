@@ -17,7 +17,7 @@ header {
   vertical-align: middle;
 }
 header nav {
-  min-width: 40%;
+  min-width: 60%;
 }
 .nav-list {
   padding: 0;
@@ -91,7 +91,7 @@ label .bar {
 .hb-nav-list li {
   border-top: 1px solid #fff;
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .logo img {
     width: 80px;
   }

@@ -109,11 +109,13 @@
   letter-spacing: 0.1rem;
 }
 .info-table table tr {
-  border-top: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .info-table table tr th {
   width: 30%;
+}
+.info-content-title {
+  border-bottom: 3px solid #fff;
 }
 .info-content-title h2 {
   font-size: 2.5rem;

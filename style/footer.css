@@ -13,7 +13,7 @@ footer .container {
 footer .content {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 20px 0 10px 0;
 }
 .left-content {
