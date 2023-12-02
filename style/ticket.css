@@ -50,7 +50,51 @@ a {
 .current-step {
   background-color: #c89951;
 }
-table {
+.buying-area {
+  padding: 50px 0;
+}
+.area-flex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+}
+.area-title {
+  font-weight: 700;
+}
+.area-title,
+.area-total {
+  background-color: #292f47;
+}
+.buying-area .type {
+  width: 100px;
+}
+.buying-area .price {
+  width: 150px;
+}
+.buying-area .quantity {
+  text-align: center;
+  width: 200px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.buying-area input {
+  width: 40px;
+  text-align: center;
+}
+.buying-area button {
+  background-color: #c89951;
+  width: 30px;
+  height: 28px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* table {
   margin: 30px 0;
   width: 100%;
   border-collapse: collapse;
@@ -100,7 +144,7 @@ table button {
   border: none;
   color: #fff;
   cursor: pointer;
-}
+} */
 .button {
   display: flex;
   justify-content: end;
@@ -125,7 +169,24 @@ table button {
 #ticket-fill-info {
   display: none;
 }
-.buying-table-info table {
+.buying-info-area {
+  padding: 50px 0;
+}
+.buying-info-area .area-flex:last-of-type {
+  border: none;
+}
+.buying-info-area .type {
+  width: 100px;
+}
+.buying-info-area .quantity {
+  width: 150px;
+  text-align: center;
+}
+.buying-info-area .price {
+  width: 150px;
+  text-align: center;
+}
+/* .buying-table-info table {
   width: 100%;
 }
 .buying-table-info table tr:nth-of-type(5) {
@@ -146,7 +207,7 @@ table button {
 .buying-table-info table .next-step-ticket-price,
 .next-step-total-price {
   text-align: right;
-}
+} */
 
 .fill-info {
   width: 100%;
