@@ -18,6 +18,15 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Sen:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/general.css" />
     <link rel="stylesheet" href="style/footer.css" />
@@ -64,7 +73,7 @@
         </div>
       </section>
       <!-- about us -->
-      <section id="about-us">
+      <section data-aos="fade-up" id="about-us">
         <div class="container">
           <h2>關於我們</h2>
           <div class="about-us-content">
@@ -92,51 +101,90 @@
         </div>
       </section>
       <!-- recent exhibitions -->
-      <section id="recent-exhibitions">
+      <section data-aos="fade-up" id="recent-exhibitions">
         <div class="container">
           <h2>近期展覽</h2>
-          <div class="exhibition-card-list">
-            <a href="ticket.html" class="card-link"
-              ><div class="card">
-                <div class="pic">
-                  <img
-                    src="img/City_night_img.png"
-                    alt="「光影交錯：城市之夜」"
-                  />
+        </div>
+        <div class="owl-carousel">
+          <a href="ticket.html" class="card-link"
+            ><div class="card">
+              <div class="pic">
+                <img
+                  src="img/City_night_img.png"
+                  alt="「光影交錯：城市之夜」"
+                />
+              </div>
+              <div class="exhibition-intro">
+                <div class="title"><h3>「光影交錯：城市之夜」</h3></div>
+                <div class="date">2024年4月15日至4月30日</div>
+              </div>
+            </div></a
+          >
+          <a href="ticket.html" class="card-link"
+            ><div class="card">
+              <div class="pic">
+                <img src="img/Nature_img.png" alt="「光影自然：大地之美」" />
+              </div>
+              <div class="exhibition-intro">
+                <div class="title"><h3>「光影自然：大地之美」</h3></div>
+                <div class="date">2024年5月15日至5月30日</div>
+              </div>
+            </div></a
+          >
+          <a href="ticket.html" class="card-link"
+            ><div class="card">
+              <div class="pic">
+                <img src="img/Crowd_img.png" alt="「人像之美：真我風華」" />
+              </div>
+              <div class="exhibition-intro">
+                <div class="title"><h3>「人像之美：真我風華」</h3></div>
+                <div class="date">2024年6月15日至6月30日</div>
+              </div>
+            </div></a
+          >
+          <a href="ticket.html" class="card-link"
+            ><div class="card">
+              <div class="pic">
+                <img src="img/Water_img.png" alt="澄澈流淌：水的視界" />
+              </div>
+              <div class="exhibition-intro">
+                <div class="title">
+                  <h3>澄澈流淌：水的視界</h3>
                 </div>
-                <div class="exhibition-intro">
-                  <div class="title"><h3>「光影交錯：城市之夜」</h3></div>
-                  <div class="date">2024年4月15日至4月30日</div>
+                <div class="date">2024年7月1日至8月4日</div>
+              </div>
+            </div></a
+          >
+          <a href="ticket.html" class="card-link"
+            ><div class="card">
+              <div class="pic">
+                <img src="img/Mountain_img.png" alt="巍巍峻嶺：山之詩意" />
+              </div>
+              <div class="exhibition-intro">
+                <div class="title">
+                  <h3>巍巍峻嶺：山之詩意</h3>
                 </div>
-              </div></a
-            >
-            <a href="ticket.html" class="card-link"
-              ><div class="card">
-                <div class="pic">
-                  <img src="img/Nature_img.png" alt="「光影自然：大地之美」" />
+                <div class="date">2024年8月10日至9月27日</div>
+              </div>
+            </div></a
+          >
+          <a href="ticket.html" class="card-link"
+            ><div class="card">
+              <div class="pic">
+                <img src="img/Snow_img.png" alt="雪韻悠悠：冰雪奇景" />
+              </div>
+              <div class="exhibition-intro">
+                <div class="title">
+                  <h3>雪韻悠悠：冰雪奇景</h3>
                 </div>
-                <div class="exhibition-intro">
-                  <div class="title"><h3>「光影自然：大地之美」</h3></div>
-                  <div class="date">2024年5月15日至5月30日</div>
-                </div>
-              </div></a
-            >
-            <a href="ticket.html" class="card-link"
-              ><div class="card">
-                <div class="pic">
-                  <img src="img/Crowd_img.png" alt="「人像之美：真我風華」" />
-                </div>
-                <div class="exhibition-intro">
-                  <div class="title"><h3>「人像之美：真我風華」</h3></div>
-                  <div class="date">2024年6月15日至6月30日</div>
-                </div>
-              </div></a
-            >
-          </div>
+                <div class="date">2024年12月1日至12月29日</div>
+              </div>
+            </div></a
+          >
         </div>
       </section>
       <!-- news -->
-      <section id="news">
+      <section data-aos="fade-up" id="news">
         <div class="container">
           <h2>最新消息</h2>
           <div class="news-content">
@@ -200,7 +248,7 @@
         </div>
       </section> -->
       <!-- contact us -->
-      <section id="contact-us">
+      <section data-aos="fade-up" id="contact-us">
         <div class="container">
           <h2>聯絡我們</h2>
           <div class="contact-us-form">
@@ -272,5 +320,14 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
