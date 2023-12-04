@@ -76,17 +76,16 @@ p {
   display: grid;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .achievement-list {
+    width: 90%;
+    margin: auto;
+  }
+}
 /* portifolio */
 #portifolio {
   width: 100%;
 }
-
-/* .portifolio-list {
-  display: flex;
-  justify-content: space-between;
-  row-gap: 20px;
-  flex-wrap: wrap;
-} */
 .portifolio-card .pic {
   background-color: #fff;
 }
