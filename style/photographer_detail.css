@@ -52,6 +52,22 @@ p {
 .brief-intro-para {
   margin: 20px 0;
 }
+@media (max-width: 768px) {
+  .phtographer-info-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .photographer-img {
+    padding: 0;
+  }
+  .photographer-img .pic {
+    width: 250px;
+  }
+  .photographer-info-detail {
+    max-width: 90%;
+    padding: 0;
+  }
+}
 /* achievement */
 #achievement {
   width: 100%;
@@ -60,20 +76,18 @@ p {
   display: grid;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .achievement-list {
+    width: 90%;
+    margin: auto;
+  }
+}
 /* portifolio */
 #portifolio {
   width: 100%;
 }
-
-.portifolio-list {
-  display: flex;
-  justify-content: space-between;
-  row-gap: 20px;
-  flex-wrap: wrap;
-}
 .portifolio-card .pic {
   background-color: #fff;
-  width: 350px;
 }
 .portifolio-card .pic img {
   width: 100%;

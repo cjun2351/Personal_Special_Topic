@@ -241,7 +241,7 @@ label .bar {
 }
 .exhibition-card-list .card {
   margin: 0 20px;
-  max-width: 300px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
 }

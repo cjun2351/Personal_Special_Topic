@@ -7,7 +7,6 @@ $(".owl-carousel").owlCarousel({
   autoplay: true, //自動撥放
   autoplayTimeout: 2000,
   autoplayHoverPause: true, //hover 時停止自動撥放
-  autowidth: true,
   responsive: {
     0: {
       nav: false,
