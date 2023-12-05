@@ -31,11 +31,11 @@ window.addEventListener("scroll", () => {
   //選取 header
   if (window.innerWidth > 768) {
     //如果螢幕寬度大於 768 px
-    if (verticalScrollPx < 800) {
+    if (verticalScrollPx < 700) {
       //如果 Y 軸滾動小於 700
       header.style.backgroundColor = "transparent";
       //header 背景透明
-    } else if (verticalScrollPx >= 800) {
+    } else if (verticalScrollPx >= 700) {
       // 若超過或等於 700
       header.style.backgroundColor = "#292f47";
       //header 背景為深藍色
