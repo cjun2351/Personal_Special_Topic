@@ -2,7 +2,7 @@ AOS.init(); //啟動 AOS
 
 $(".owl-carousel").owlCarousel({
   loop: true, // 循環播放
-  margin: 100, // 外距 10px
+  margin: 100, // 外距 100px
   nav: false,
   autoplay: true, //自動撥放
   autoplayTimeout: 2000,
