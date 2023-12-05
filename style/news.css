@@ -28,6 +28,12 @@
   color: #fff;
   font-size: 1rem;
 }
+.more-button {
+  transition: all 0.5s ease;
+}
+.more-button:hover {
+  scale: 1.1;
+}
 @media (max-width: 768px) {
   .news-content {
     width: 90%;

@@ -31,6 +31,22 @@ header nav {
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
 }
+.nav-list li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-list li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 header label {
   margin: 10px;
   height: 50px;
@@ -210,7 +226,12 @@ label .bar {
   text-decoration: none;
   color: #fff;
   font-size: 1.25rem;
+  transition: all 0.5s ease;
 }
+.button a:hover {
+  scale: 1.1;
+}
+
 @media (max-width: 768px) {
   .about-us-content {
     display: flex;
@@ -297,6 +318,12 @@ label .bar {
 .news-group {
   display: flex;
   column-gap: 60px;
+}
+#news .button {
+  transition: all 0.5s ease;
+}
+#news .button:hover {
+  scale: 1.1;
 }
 @media (max-width: 768px) {
   .news-content {
