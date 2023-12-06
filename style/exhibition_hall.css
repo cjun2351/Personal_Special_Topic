@@ -14,8 +14,6 @@
 }
 .intro-content .intro-title h3 {
   margin: 20px 0 15px 0;
-  letter-spacing: 0.1rem;
-  font-size: 1.75rem;
 }
 .intro-content .intro-para {
   text-align: center;
@@ -40,7 +38,6 @@
 }
 .feature-title h2 {
   text-align: center;
-  font-size: 2.5rem;
 }
 .feature-list {
   display: flex;
@@ -72,7 +69,7 @@
     max-width: 90%;
   }
   h4 {
-    margin: 10px;
+    margin: 10px 0;
   }
 }
 /* hall-info */
@@ -118,11 +115,9 @@
   border-bottom: 3px solid #fff;
 }
 .info-content-title h2 {
-  font-size: 2.5rem;
   margin: 20px 0;
 }
 .map-title h2 {
-  font-size: 2.5em;
   margin: 20px 0;
 }
 .map-content iframe {
@@ -143,11 +138,19 @@
     width: 90%;
     margin: auto;
   }
+  .info-content-title {
+    width: 90%;
+    margin: auto;
+  }
   .map-content {
     padding: 0;
     width: 100%;
   }
   .map {
+    width: 90%;
+    margin: auto;
+  }
+  .map-title {
     width: 90%;
     margin: auto;
   }

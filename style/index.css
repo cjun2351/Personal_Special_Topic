@@ -92,6 +92,7 @@ label .bar {
   margin: 0;
   padding: 10px 0 0 0;
   transition: max-height 0.5s;
+  display: none;
 }
 .hb-nav-list li {
   list-style: none;
@@ -119,6 +120,9 @@ label .bar {
   }
   header label {
     display: flex;
+  }
+  .hb-nav-list {
+    display: block;
   }
 }
 /* banner */
@@ -205,10 +209,6 @@ label .bar {
   flex-direction: column;
   max-width: 50%;
 }
-.about-us-intro .title h3 {
-  font-size: 1.75rem;
-  letter-spacing: 0.1rem;
-}
 .about-us-intro .content p {
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
@@ -239,7 +239,7 @@ label .bar {
     align-items: center;
   }
   .about-us-content .pic {
-    max-width: 320px;
+    max-width: 90%;
     margin: 0;
   }
   .about-us-intro {
@@ -267,6 +267,7 @@ label .bar {
   display: flex;
   flex-direction: column;
 }
+
 .card .pic {
   background-color: #fff;
 }
@@ -295,6 +296,9 @@ label .bar {
     justify-content: center;
     align-items: center;
     row-gap: 30px;
+  }
+  .owl-item {
+    padding: 0 25px;
   }
 }
 /* new */

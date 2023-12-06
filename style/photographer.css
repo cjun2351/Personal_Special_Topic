@@ -2,10 +2,6 @@
 #outstanding {
   width: 100%;
 }
-.outstanding-title h2 {
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
-}
 .photographer-list {
   display: flex;
   margin: 50px 0;
@@ -13,9 +9,7 @@
 .photographer-3-list {
   justify-content: space-between;
 }
-.photographer-2-list {
-  justify-content: space-evenly;
-}
+
 .photographer-card .pic {
   background-color: #fff;
 }
@@ -31,10 +25,8 @@
   color: #fff;
 }
 .name-content h3 {
-  font-size: 1.75rem;
   padding: 10px 0;
   margin: 0;
-  letter-spacing: 0.1rem;
 }
 .name-content p {
   font-size: 1.25rem;
@@ -46,14 +38,16 @@
 #newbie {
   width: 100%;
 }
-.newbie-title h2 {
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
+.photographer-2-list {
+  justify-content: space-evenly;
 }
 
 @media (max-width: 768px) {
   .photographer-list {
     margin: 0;
+  }
+  .photographer-card {
+    width: 90%;
   }
   .photographer-3-list {
     display: flex;

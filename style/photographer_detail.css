@@ -26,14 +26,6 @@
 .photographer-info-detail .photographer-name {
   margin: 20px 0;
 }
-h2 {
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
-}
-h3 {
-  font-size: 1.75rem;
-  letter-spacing: 0.1rem;
-}
 p {
   font-size: 1.25rem;
   line-height: 1.5em;
@@ -61,11 +53,15 @@ p {
     padding: 0;
   }
   .photographer-img .pic {
-    width: 250px;
+    width: 90%;
+    margin: auto;
   }
   .photographer-info-detail {
     max-width: 90%;
     padding: 0;
+  }
+  .photographer-name h2 {
+    width: 100%;
   }
 }
 /* achievement */
@@ -93,4 +89,9 @@ p {
   width: 100%;
   vertical-align: middle;
   padding: 15px 15px 30px 15px;
+}
+@media (max-width: 768px) {
+  .owl-item {
+    padding: 0 25px;
+  }
 }

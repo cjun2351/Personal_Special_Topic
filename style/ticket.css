@@ -15,11 +15,9 @@
   margin: 20px 0;
 }
 h2 {
-  font-size: 2.5rem;
   margin: 10px 0;
 }
 h3 {
-  font-size: 1.75rem;
   margin: 10px 0;
 }
 p {
@@ -29,6 +27,20 @@ a {
   font-size: 1.25rem;
   text-decoration: none;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .exhibition-detail-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .exhibition-intro {
+    width: 90%;
+    margin: auto;
+  }
+}
+/* ticket-buying */
+#ticket-buying {
+  width: 100%;
 }
 .buying-step {
   display: flex;
@@ -85,7 +97,10 @@ input::-webkit-inner-spin-button {
 .buying-area input {
   width: 40px;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+.buying-area input:focus {
+  outline: none;
 }
 .buying-area button {
   background-color: #c89951;
@@ -94,7 +109,7 @@ input::-webkit-inner-spin-button {
   border: none;
   color: #fff;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 /* table {
   margin: 30px 0;
@@ -167,6 +182,29 @@ table button {
 #ticket-buying {
   display: block;
 }
+@media (max-width: 768px) {
+  .buying-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .buying-area {
+    width: 90%;
+    margin: auto;
+  }
+  .buying-area button {
+    height: 23.25px;
+    width: 20px;
+  }
+  .step {
+    width: 150px;
+    height: 50px;
+  }
+  .next-step-button {
+    width: 90%;
+  }
+}
 /* ticket-fill-info */
 #ticket-fill-info {
   display: none;
@@ -231,8 +269,11 @@ table button {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  column-gap: 30px;
   width: 30%;
   flex-wrap: wrap;
+  height: 200px;
+  align-content: center;
 }
 
 .fill-info .input {
@@ -263,4 +304,34 @@ table button {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .buying-info-area {
+    width: 90%;
+    margin: auto;
+  }
+  .fill-info {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .step-button {
+    width: 90%;
+    margin: auto;
+  }
+  .fill-info .input {
+    flex-direction: column;
+  }
+  .form {
+    height: auto;
+  }
+  .buying-info-area .type {
+    width: 50px;
+  }
+  .buying-info-area .price {
+    width: 50px;
+  }
+  .buying-info-area .quantity {
+    width: 50px;
+  }
 }

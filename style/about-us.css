@@ -18,10 +18,7 @@
   padding: 50px;
   max-width: 60%;
 }
-.content h3 {
-  font-size: 1.75rem;
-  letter-spacing: 0.05rem;
-}
+
 .content p {
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
@@ -46,7 +43,7 @@
     flex-direction: column;
   }
   .about-us-content .pic {
-    max-width: 320px;
+    max-width: 90%;
   }
   .about-us-content .content {
     padding: 0;

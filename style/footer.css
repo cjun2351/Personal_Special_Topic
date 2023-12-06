@@ -94,4 +94,8 @@ footer .content {
     flex-direction: column;
     padding: 10px 0;
   }
+  footer .copyright {
+    width: 90%;
+    margin: auto;
+  }
 }
