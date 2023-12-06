@@ -166,7 +166,12 @@ table button {
   display: flex;
   justify-content: end;
 }
-.button span {
+.button:hover button,
+.button:hover input[type="submit"] {
+  transform: scale(1.1);
+}
+.button button,
+.button input[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,6 +183,7 @@ table button {
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 #ticket-buying {
   display: block;
@@ -248,31 +254,34 @@ table button {
 .next-step-total-price {
   text-align: right;
 } */
-
 .fill-info {
   width: 100%;
   margin: auto;
-  border: 1px solid #fff5;
-  background-color: #292f47;
-  border-radius: 10px;
-  padding: 50px 0;
+
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 .step-button {
   display: flex;
-  justify-content: space-between;
-  padding: 50px 0 0 0;
+  width: 90%;
+  justify-content: end;
+  column-gap: 50px;
+  padding: 20px 0 0 0;
 }
 .form {
+  border: 1px solid #fff5;
+  background-color: #292f47;
+  border-radius: 10px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   column-gap: 30px;
-  width: 30%;
+  width: 100%;
   flex-wrap: wrap;
-  height: 200px;
+  max-height: 350px;
   align-content: center;
 }
 
@@ -313,17 +322,15 @@ table button {
   .fill-info {
     width: 90%;
     margin: auto;
-    flex-direction: column;
   }
   .step-button {
-    width: 90%;
-    margin: auto;
+    justify-content: center;
   }
   .fill-info .input {
     flex-direction: column;
   }
   .form {
-    height: auto;
+    max-height: 1000px;
   }
   .buying-info-area .type {
     width: 50px;

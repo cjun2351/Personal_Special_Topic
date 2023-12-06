@@ -42,3 +42,35 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+function checkForm(e) {
+  let name = document.querySelector("#name");
+  let phone = document.querySelector("#phone");
+  let email = document.querySelector("#email");
+  let textAreaContent = document.querySelector(".input-textarea");
+  if (!name.value) {
+    alert("請輸入姓名");
+    e.preventDefault();
+    name.focus();
+    return false;
+  }
+  if (!phone.value) {
+    alert("請輸入連絡電話");
+    e.preventDefault();
+    phone.focus();
+    return false;
+  }
+  if (!email.value) {
+    alert("請輸入電子郵件");
+    e.preventDefault();
+    email.focus();
+    return false;
+  }
+  if (!textAreaContent.value) {
+    alert("請輸入內容");
+    e.preventDefault();
+    return false;
+  }
+}
+
+document.querySelector("form").addEventListener("submit", checkForm);

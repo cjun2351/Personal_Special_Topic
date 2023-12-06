@@ -213,7 +213,7 @@
               </tr>
             </table>
           </div> -->
-          <div class="next-step-button button"><span>下一步</span></div>
+          <div class="next-step-button button"><button>下一步</button></div>
         </div>
       </section>
       <!-- ticket-fill-info -->
@@ -283,6 +283,7 @@
                 <label for="name">姓名</label>
                 <input type="text" id="name" placeholder="請輸入姓名" />
               </div>
+
               <div class="form-tel input">
                 <label for="tel">聯絡電話</label>
                 <input type="tel" id="tel" placeholder="請輸入連絡電話" />
@@ -312,15 +313,15 @@
                 <input type="number" id="cvv" placeholder="999" />
               </div>
             </div>
+            <div class="step-button">
+              <div class="previous-step-button button">
+                <button>上一步</button>
+              </div>
+              <div class="confirm-button button">
+                <input type="submit" value="確認" />
+              </div>
+            </div>
           </form>
-          <div class="step-button">
-            <div class="previous-step-button button">
-              <span>上一步</span>
-            </div>
-            <div class="confirm-button button">
-              <span>確認</span>
-            </div>
-          </div>
         </div>
       </section>
     </main>
@@ -365,11 +366,11 @@
     <script>
       let nextStepBtn = document.querySelector(".next-step-button");
       let previousStepBtn = document.querySelector(".previous-step-button");
+      let ticketBuying = document.querySelector("#ticket-buying");
+      let ticketFillInfo = document.querySelector("#ticket-fill-info");
       nextStepBtn.addEventListener(
         "click",
         function () {
-          let ticketBuying = document.querySelector("#ticket-buying");
-          let ticketFillInfo = document.querySelector("#ticket-fill-info");
           ticketBuying.style.display = "none";
           ticketFillInfo.style.display = "block";
         },
@@ -377,9 +378,8 @@
       );
       previousStepBtn.addEventListener(
         "click",
-        function () {
-          let ticketBuying = document.querySelector("#ticket-buying");
-          let ticketFillInfo = document.querySelector("#ticket-fill-info");
+        function (e) {
+          e.preventDefault();
           ticketBuying.style.display = "block";
           ticketFillInfo.style.display = "none";
         },
