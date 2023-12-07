@@ -47,30 +47,64 @@ function checkForm(e) {
   let name = document.querySelector("#name");
   let phone = document.querySelector("#phone");
   let email = document.querySelector("#email");
-  let textAreaContent = document.querySelector(".input-textarea");
+  let textAreaContent = document.querySelector("#content");
+  let popUp = document.querySelector(".pop-up");
+
   if (!name.value) {
-    alert("請輸入姓名");
     e.preventDefault();
-    name.focus();
+    popUp.innerHTML = `<div class="warning">
+        <p>請輸入姓名</p>
+    </div>
+    <button class="confirm">確認</button>`;
+    showPopUp();
+    document.querySelector(".confirm").addEventListener("click", hidePopUp);
     return false;
   }
   if (!phone.value) {
-    alert("請輸入連絡電話");
     e.preventDefault();
-    phone.focus();
+    popUp.innerHTML = `<div class="warning">
+        <p>請輸入聯絡電話</p>
+    </div>
+    <button class="confirm">確認</button>`;
+    showPopUp();
+    document.querySelector(".confirm").addEventListener("click", hidePopUp);
     return false;
   }
   if (!email.value) {
-    alert("請輸入電子郵件");
     e.preventDefault();
-    email.focus();
+    popUp.innerHTML = `<div class="warning">
+        <p>請輸入電子信箱</p>
+    </div>
+    <button class="confirm">確認</button>`;
+    showPopUp();
+    document.querySelector(".confirm").addEventListener("click", hidePopUp);
     return false;
   }
   if (!textAreaContent.value) {
-    alert("請輸入內容");
     e.preventDefault();
+    popUp.innerHTML = `<div class="warning">
+        <p>請輸入內容</p>
+    </div>
+    <button class="confirm">確認</button>`;
+    showPopUp();
+    document.querySelector(".confirm").addEventListener("click", hidePopUp);
     return false;
   }
+  popUp.innerHTML = `<div class="warning">
+        <p>請輸入內容</p>
+    </div>
+    <button class="confirm">確認</button>`;
+  showPopUp();
+  document.querySelector(".confirm").addEventListener("click", hidePopUp);
 }
 
 document.querySelector("form").addEventListener("submit", checkForm);
+document.querySelector(".mask").addEventListener("click", hidePopUp);
+function showPopUp() {
+  document.querySelector(".pop-up").style.display = "block";
+  document.querySelector(".mask").style.display = "block";
+}
+function hidePopUp() {
+  document.querySelector(".pop-up").style.display = "none";
+  document.querySelector(".mask").style.display = "none";
+}

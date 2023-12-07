@@ -167,7 +167,7 @@
             <a href="ticket.html" class="card-link"
               ><div class="card">
                 <div class="pic">
-                  <img src="img/Snow_img.png" alt="雪韻悠悠：冰雪奇景" />
+                  <img src="img/Snow_img.webp" alt="雪韻悠悠：冰雪奇景" />
                 </div>
                 <div class="exhibition-intro">
                   <div class="title">
@@ -249,7 +249,7 @@
         <div class="container">
           <h2>聯絡我們</h2>
           <div class="contact-us-form">
-            <form action="">
+            <form id="contact-form">
               <div class="input">
                 <label for="name">姓名</label>
                 <input type="text" id="name" placeholder="請輸入姓名" />
@@ -271,12 +271,19 @@
                 ></textarea>
               </div>
               <div class="submit-button button">
-                <input type="submit" value="提交" />
+                <input type="submit" value="提交" id="submit" />
               </div>
             </form>
           </div>
         </div>
       </section>
+      <div class="mask"></div>
+      <div class="pop-up">
+        <div class="warning">
+          <p></p>
+        </div>
+        <button>確認</button>
+      </div>
     </main>
     <!-- footer -->
     <footer>

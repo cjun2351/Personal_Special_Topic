@@ -451,3 +451,38 @@ textarea::placeholder {
     margin: auto;
   }
 }
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+.pop-up {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #292f47;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.pop-up {
+  text-align: center;
+  width: 250px;
+}
+.pop-up .warning {
+  font-size: 1.25rem;
+}
+.pop-up button {
+  padding: 10px 15px;
+  background-color: #c89951;
+  color: white;
+  border-radius: 5px;
+  margin: auto;
+}
