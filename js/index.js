@@ -89,6 +89,7 @@ function hidePopUp() {
   document.querySelector(".mask").style.display = "none"; //關閉遮罩
 }
 function showWarning(message) {
+  //建立秀出警告的函數
   let popUp = document.querySelector(".pop-up"); //取得 popUp
   popUp.innerHTML = `<div class="warning">
       <p>${message}</p>
