@@ -90,12 +90,7 @@ function checkForm(e) {
     document.querySelector(".confirm").addEventListener("click", hidePopUp);
     return false;
   }
-  popUp.innerHTML = `<div class="warning">
-        <p>請輸入內容</p>
-    </div>
-    <button class="confirm">確認</button>`;
-  showPopUp();
-  document.querySelector(".confirm").addEventListener("click", hidePopUp);
+  alert("感謝您的填寫");
 }
 
 document.querySelector("form").addEventListener("submit", checkForm);
