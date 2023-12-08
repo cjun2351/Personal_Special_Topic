@@ -265,7 +265,7 @@ table button {
 }
 .step-button {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: end;
   column-gap: 50px;
   padding: 20px 0 0 0;
