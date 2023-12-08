@@ -103,10 +103,11 @@ function showThanks() {
 <div class="confirm-btns">
   <button class="cancel">取消</button>
   <button class="confirm">確認</button>
-</div>`; // 修改警告內文
+</div>`; // 修改感謝並確認內容
   showPopUp(); // 秀出彈窗
-  document.querySelector(".cancel").addEventListener("click", hidePopUp);
+  document.querySelector(".cancel").addEventListener("click", hidePopUp); // 取消關閉視窗
   document.querySelector(".confirm").addEventListener("click", () => {
-    document.querySelector("#contact-form").submit();
+    // 新增確認按鈕事件
+    document.querySelector("#contact-form").submit(); // 送出表單
   });
 }
