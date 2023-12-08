@@ -48,36 +48,32 @@ function checkForm(e) {
   let phone = document.querySelector("#phone"); //取得表單內 phone 的格位
   let email = document.querySelector("#email"); //取得表單內 email 的格位
   let textAreaContent = document.querySelector("#content"); //取得表單內 content 的格位
-
   if (!name.value) {
     // 如果 name 中沒填寫資料
-    e.preventDefault(); // 取消送出事件
     showWarning("請輸入姓名");
     return false; // 回傳 false
   }
   if (!phone.value) {
     // 如果 phone 中沒填寫資料
-    e.preventDefault(); // 取消送出事件
     showWarning("請輸入聯絡電話");
     return false; // 回傳 false
   }
   if (!email.value) {
     // 如果 email 中沒填寫資料
-    e.preventDefault(); // 取消送出事件
     showWarning("請輸入電子郵件");
     return false; // 回傳 false
   }
   if (!textAreaContent.value) {
     // 如果 content 中沒填寫資料
-    e.preventDefault(); // 取消送出事件
     showWarning("請輸入內容");
     return false; // 回傳 false
   }
-  alert("感謝您的填寫"); //無錯誤則彈出感謝視窗
+  showThanks(); //無錯誤則彈出感謝視窗
 }
 
-document.querySelector("form").addEventListener("submit", checkForm); //送出表單前檢查
+document.querySelector("#submitBtn").addEventListener("click", checkForm); //送出表單前檢查
 document.querySelector(".mask").addEventListener("click", hidePopUp); //點擊遮罩會關閉彈窗
+
 function showPopUp() {
   // 建立秀出彈窗的函數
   document.querySelector(".pop-up").style.display = "block"; //秀出彈窗
@@ -97,4 +93,20 @@ function showWarning(message) {
   <button class="confirm">確認</button>`; // 修改警告內文
   showPopUp(); // 秀出彈窗
   document.querySelector(".confirm").addEventListener("click", hidePopUp); //點擊確認關閉彈窗
+}
+
+function showThanks() {
+  let popUp = document.querySelector(".pop-up"); //取得 popUp
+  popUp.innerHTML = `<div class="thanks-area">
+  <p>感謝你的填寫，確定要送出嗎?</p>
+</div>
+<div class="confirm-btns">
+  <button class="cancel">取消</button>
+  <button class="confirm">確認</button>
+</div>`; // 修改警告內文
+  showPopUp(); // 秀出彈窗
+  document.querySelector(".cancel").addEventListener("click", hidePopUp);
+  document.querySelector(".confirm").addEventListener("click", () => {
+    document.querySelector("#contact-form").submit();
+  });
 }

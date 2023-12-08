@@ -423,9 +423,10 @@ textarea::placeholder {
   color: #0006;
 }
 .submit-button {
-  align-self: flex-end;
+  display: flex;
+  justify-content: end;
 }
-.submit-button input {
+.submit-button button {
   background-color: #c89951;
   border: none;
   color: white;
@@ -436,7 +437,7 @@ textarea::placeholder {
   font-size: 1.25rem;
   transition: all 0.5s ease;
 }
-.submit-button input:hover {
+.submit-button button:hover {
   scale: 1.1;
 }
 @media (max-width: 768px) {
@@ -471,11 +472,9 @@ textarea::placeholder {
   padding: 20px;
   border-radius: 5px;
   z-index: 10;
-}
-.pop-up {
   text-align: center;
-  width: 250px;
 }
+
 .pop-up .warning {
   font-size: 1.25rem;
 }
@@ -485,4 +484,17 @@ textarea::placeholder {
   color: white;
   border-radius: 5px;
   margin: auto;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.pop-up button:hover {
+  scale: 1.1;
+}
+.confirm-btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+.confirm-btns .cancel {
+  background-color: #0b1a2f;
 }
