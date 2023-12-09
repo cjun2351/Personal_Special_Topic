@@ -3,22 +3,20 @@ AOS.init(); //啟動 AOS
 $(".owl-carousel").owlCarousel({
   loop: true, // 循環播放
   margin: 100, // 外距 100px
-  nav: false,
+  nav: true,
+  dots: true,
   autoplay: true, //自動撥放
   autoplayTimeout: 3000,
   smartSpeed: 800,
   autoplayHoverPause: true, //hover 時停止自動撥放
   responsive: {
     0: {
-      nav: false,
       items: 1, // 螢幕大小為 0~600 顯示 1 個項目
     },
     600: {
-      nav: false,
       items: 2, // 螢幕大小為 600~1000 顯示 3 個項目
     },
     1000: {
-      nav: false,
       items: 3,
     },
   },
