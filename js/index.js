@@ -5,7 +5,8 @@ $(".owl-carousel").owlCarousel({
   margin: 100, // 外距 100px
   nav: false,
   autoplay: true, //自動撥放
-  autoplayTimeout: 2000,
+  autoplayTimeout: 3000,
+  smartSpeed: 800,
   autoplayHoverPause: true, //hover 時停止自動撥放
   responsive: {
     0: {
