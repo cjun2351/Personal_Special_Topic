@@ -1,3 +1,4 @@
+//------------------------------------------->Owl carousel 設定
 $(".owl-carousel").owlCarousel({
   loop: true, // 循環播放
   margin: 20, // 外距 20px
