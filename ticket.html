@@ -229,23 +229,23 @@
               <div class="quantity"><span>數量</span></div>
               <div class="price"><span>價格</span></div>
             </div>
-            <div class="area-adult area-flex">
+            <div class="area-adult-result area-flex">
               <div class="type"><span>成人票</span></div>
               <div class="quantity"><span>0</span></div>
               <div class="price">0</div>
             </div>
-            <div class="area-half area-flex">
+            <div class="area-half-result area-flex">
               <div class="type"><span>半票</span></div>
               <div class="quantity"><span>0</span></div>
               <div class="price">0</div>
             </div>
-            <div class="area-child area-flex">
+            <div class="area-child-result area-flex">
               <div class="type"><span>兒童票</span></div>
               <div class="quantity"><span>0</span></div>
               <div class="price">0</div>
             </div>
             <div class="area-total area-flex">
-              <div class="total type"><span>總價</span></div>
+              <div class="total-type"><span>總價</span></div>
               <div class="price">0</div>
             </div>
           </div>
@@ -363,28 +363,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      let nextStepBtn = document.querySelector(".next-step-button");
-      let previousStepBtn = document.querySelector(".previous-step-button");
-      let ticketBuying = document.querySelector("#ticket-buying");
-      let ticketFillInfo = document.querySelector("#ticket-fill-info");
-      nextStepBtn.addEventListener(
-        "click",
-        function () {
-          ticketBuying.style.display = "none";
-          ticketFillInfo.style.display = "block";
-        },
-        false
-      );
-      previousStepBtn.addEventListener(
-        "click",
-        function (e) {
-          e.preventDefault();
-          ticketBuying.style.display = "block";
-          ticketFillInfo.style.display = "none";
-        },
-        false
-      );
-    </script>
+    <script src="js/ticket.js"></script>
   </body>
 </html>
