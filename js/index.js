@@ -1,6 +1,6 @@
-//------------------------------------------->啟動 AOS
-AOS.init(); //啟動 AOS
-//------------------------------------------->Owl carousel 設定
+//啟動 AOS
+AOS.init();
+//Owl carousel 設定
 $(".owl-carousel").owlCarousel({
   loop: true, // 循環播放
   margin: 100, // 外距 100px
@@ -22,82 +22,71 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
-//------------------------------------------->header 背景顏色設定
+//header 背景顏色設定
 window.addEventListener("scroll", () => {
   //新增滾動事件
   const verticalScrollPx = window.scrollY;
   //建立 Y 軸滾動常數
   const header = document.querySelector("header");
-  //選取 header
   if (window.innerWidth > 768) {
     //如果螢幕寬度大於 768 px
     if (verticalScrollPx < 650) {
       //如果 Y 軸滾動小於 650
       header.style.backgroundColor = "transparent";
-      //header 背景透明
     } else if (verticalScrollPx >= 650) {
       // 若超過或等於 650
       header.style.backgroundColor = "#292f47";
-      //header 背景為深藍色
     }
   }
 });
-//------------------------------------------->表單檢查
+//表單檢查
 function checkForm() {
-  let name = document.querySelector("#name"); //取得表單內 name 的格位
-  let phone = document.querySelector("#phone"); //取得表單內 phone 的格位
-  let email = document.querySelector("#email"); //取得表單內 email 的格位
-  let textAreaContent = document.querySelector("#content"); //取得表單內 content 的格位
+  let name = document.querySelector("#name");
+  let phone = document.querySelector("#phone");
+  let email = document.querySelector("#email");
+  let textAreaContent = document.querySelector("#content");
   if (!name.value) {
-    // 如果 name 中沒填寫資料
     showWarning("請輸入姓名");
-    return false; // 回傳 false
+    return false;
   }
   if (!phone.value) {
-    // 如果 phone 中沒填寫資料
     showWarning("請輸入聯絡電話");
-    return false; // 回傳 false
+    return false;
   }
   if (!email.value) {
-    // 如果 email 中沒填寫資料
     showWarning("請輸入電子郵件");
-    return false; // 回傳 false
+    return false;
   }
   if (!textAreaContent.value) {
-    // 如果 content 中沒填寫資料
     showWarning("請輸入內容");
-    return false; // 回傳 false
+    return false;
   }
   showThanks(); //無錯誤則彈出感謝視窗
 }
 document.querySelector("#submitBtn").addEventListener("click", checkForm); //送出表單前檢查
-//------------------------------------------->彈窗點擊事件
-document.querySelector(".mask").addEventListener("click", hidePopUp); //點擊遮罩會關閉彈窗
-
+//彈窗點擊事件
+document.querySelector(".mask").addEventListener("click", hidePopUp);
 function showPopUp() {
-  // 建立秀出彈窗的函數
-  document.querySelector(".pop-up").style.display = "block"; //秀出彈窗
-  document.querySelector(".mask").style.display = "block"; //秀出遮罩
+  document.querySelector(".pop-up").style.display = "block";
+  document.querySelector(".mask").style.display = "block";
 }
 function hidePopUp() {
-  // 建立關播彈窗的函數
-  document.querySelector(".pop-up").style.display = "none"; //關閉彈窗
-  document.querySelector(".mask").style.display = "none"; //關閉遮罩
+  document.querySelector(".pop-up").style.display = "none";
+  document.querySelector(".mask").style.display = "none";
 }
-//------------------------------------------->彈窗顯示內容
+//彈窗顯示內容
 function showWarning(message) {
-  //建立秀出警告的函數
-  let popUp = document.querySelector(".pop-up"); //取得 popUp
+  let popUp = document.querySelector(".pop-up");
   popUp.innerHTML = `<div class="warning">
       <p>${message}</p>
   </div>
   <button class="confirm">確認</button>`; // 修改警告內文
-  showPopUp(); // 秀出彈窗
-  document.querySelector(".confirm").addEventListener("click", hidePopUp); //點擊確認關閉彈窗
+  showPopUp();
+  document.querySelector(".confirm").addEventListener("click", hidePopUp);
 }
 
 function showThanks() {
-  let popUp = document.querySelector(".pop-up"); //取得 popUp
+  let popUp = document.querySelector(".pop-up");
   popUp.innerHTML = `<div class="thanks-area">
   <p>感謝你的填寫，確定要送出嗎?</p>
 </div>
@@ -105,10 +94,9 @@ function showThanks() {
   <button class="cancel">取消</button>
   <button class="confirm">確認</button>
 </div>`; // 修改感謝並確認內容
-  showPopUp(); // 秀出彈窗
-  document.querySelector(".cancel").addEventListener("click", hidePopUp); // 取消關閉視窗
+  showPopUp();
+  document.querySelector(".cancel").addEventListener("click", hidePopUp);
   document.querySelector(".confirm").addEventListener("click", () => {
-    // 新增確認按鈕事件
     document.querySelector("#contact-form").submit(); // 送出表單
   });
 }
