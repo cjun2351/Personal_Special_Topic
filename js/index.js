@@ -1,5 +1,6 @@
+//------------------------------------------->啟動 AOS
 AOS.init(); //啟動 AOS
-
+//------------------------------------------->Owl carousel 設定
 $(".owl-carousel").owlCarousel({
   loop: true, // 循環播放
   margin: 100, // 外距 100px
@@ -21,7 +22,7 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
-
+//------------------------------------------->header 背景顏色設定
 window.addEventListener("scroll", () => {
   //新增滾動事件
   const verticalScrollPx = window.scrollY;
@@ -41,8 +42,8 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
-function checkForm(e) {
+//------------------------------------------->表單檢查
+function checkForm() {
   let name = document.querySelector("#name"); //取得表單內 name 的格位
   let phone = document.querySelector("#phone"); //取得表單內 phone 的格位
   let email = document.querySelector("#email"); //取得表單內 email 的格位
@@ -69,8 +70,8 @@ function checkForm(e) {
   }
   showThanks(); //無錯誤則彈出感謝視窗
 }
-
 document.querySelector("#submitBtn").addEventListener("click", checkForm); //送出表單前檢查
+//------------------------------------------->彈窗點擊事件
 document.querySelector(".mask").addEventListener("click", hidePopUp); //點擊遮罩會關閉彈窗
 
 function showPopUp() {
@@ -83,6 +84,7 @@ function hidePopUp() {
   document.querySelector(".pop-up").style.display = "none"; //關閉彈窗
   document.querySelector(".mask").style.display = "none"; //關閉遮罩
 }
+//------------------------------------------->彈窗顯示內容
 function showWarning(message) {
   //建立秀出警告的函數
   let popUp = document.querySelector(".pop-up"); //取得 popUp

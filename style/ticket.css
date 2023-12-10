@@ -199,8 +199,11 @@ table button {
     width: 90%;
     margin: auto;
   }
+  .buying-area input {
+    width: 30px;
+  }
   .buying-area button {
-    height: 23.25px;
+    height: 22px;
     width: 20px;
   }
   .step {
@@ -209,6 +212,15 @@ table button {
   }
   .next-step-button {
     width: 90%;
+  }
+  .buying-area .type {
+    width: 50px;
+  }
+  .buying-area .price {
+    width: 50px;
+  }
+  .buying-area .quantity {
+    width: 100px;
   }
 }
 /* ticket-fill-info */
@@ -336,7 +348,7 @@ table button {
     width: 50px;
   }
   .buying-info-area .price {
-    width: 50px;
+    width: 100px;
   }
   .buying-info-area .quantity {
     width: 50px;
