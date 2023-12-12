@@ -458,7 +458,7 @@ textarea::placeholder {
     margin: auto;
   }
 }
-.mask {
+/* .mask {
   display: none;
   position: fixed;
   top: 0;
@@ -503,4 +503,4 @@ textarea::placeholder {
 }
 .confirm-btns .cancel {
   background-color: #0b1a2f;
-}
+} */

@@ -99,7 +99,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
   font-size: 1.25rem;
 }
-.buying-area input:focus {
+input:focus {
   outline: none;
 }
 .buying-area button {
@@ -162,16 +162,15 @@ table button {
   color: #fff;
   cursor: pointer;
 } */
+
 .button {
   display: flex;
   justify-content: end;
 }
-.button:hover button,
-.button:hover input[type="submit"] {
+.button:hover button {
   transform: scale(1.1);
 }
-.button button,
-.button input[type="submit"] {
+.button button {
   display: flex;
   align-items: center;
   justify-content: center;

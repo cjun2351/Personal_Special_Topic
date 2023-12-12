@@ -1,5 +1,5 @@
 //啟動 AOS
-AOS.init();
+// AOS.init();
 //Owl carousel 設定
 $(".owl-carousel").owlCarousel({
   loop: true, // 循環播放
