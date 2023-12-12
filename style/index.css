@@ -320,10 +320,13 @@ label .bar {
   align-items: center;
   font-size: 1.25rem;
   border-top: 1px solid #fff;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .news .news-type {
   font-weight: 700;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
 }
 .news-list .news:last-child {
   border-bottom: 1px solid #fff;
@@ -331,6 +334,11 @@ label .bar {
 .news-group {
   display: flex;
   column-gap: 60px;
+  align-items: center;
+}
+
+.news .new-brief-intro p {
+  margin: 0;
 }
 #news .button {
   transition: all 0.5s ease;
