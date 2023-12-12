@@ -432,7 +432,7 @@ textarea::placeholder {
   background-color: #c89951;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 15px 25px;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
@@ -450,6 +450,10 @@ textarea::placeholder {
     align-items: flex-start;
   }
   .contact-us-form form {
+    width: 90%;
+    margin: auto;
+  }
+  .submit-button {
     width: 90%;
     margin: auto;
   }

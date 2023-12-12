@@ -4,7 +4,7 @@ AOS.init();
 $(".owl-carousel").owlCarousel({
   loop: true, // 循環播放
   margin: 100, // 外距 100px
-  nav: true,
+  nav: false,
   dots: true,
   autoplay: true, //自動撥放
   autoplayTimeout: 3000,
