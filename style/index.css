@@ -37,7 +37,7 @@ header nav {
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   background-color: #fff;
   transform-origin: bottom right;
@@ -259,18 +259,10 @@ label .bar {
 .card-link {
   text-decoration: none;
 }
-.exhibition-card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  row-gap: 30px;
-}
-.exhibition-card-list .card {
-  margin: 0 20px;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
+
+.card:hover .exhibition-intro .title:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .card .pic {
@@ -289,6 +281,18 @@ label .bar {
   font-size: 1.5rem;
   margin: 10px 0;
   letter-spacing: 0.1rem;
+}
+.exhibition-intro .title:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 .exhibition-intro .date {
   font-size: 1.25rem;

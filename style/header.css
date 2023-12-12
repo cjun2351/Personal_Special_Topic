@@ -38,7 +38,7 @@ header nav {
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   background-color: #fff;
   transform-origin: bottom right;
