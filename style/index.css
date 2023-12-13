@@ -326,7 +326,8 @@ label .bar {
 }
 .news .news-date {
   position: absolute;
-  top: 10px;
+  top: 15px;
+  font-size: 1rem;
 }
 .news .news-type {
   font-weight: 700;

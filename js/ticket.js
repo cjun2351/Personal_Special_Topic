@@ -1,16 +1,3 @@
-//變數宣告
-let ticketBuying = document.querySelector("#ticket-buying");
-let ticketFillInfo = document.querySelector("#ticket-fill-info");
-let adultValue = document.querySelector(".adult-input");
-let halfValue = document.querySelector(".half-input");
-let childValue = document.querySelector(".child-input");
-let adultarea = document.querySelector(".area-adult-result .quantity");
-let halfarea = document.querySelector(".area-half-result .quantity");
-let childarea = document.querySelector(".area-child-result .quantity");
-let adultPriceArea = document.querySelector(".area-adult-result .price");
-let halfPriceArea = document.querySelector(".area-half-result .price");
-let childPriceArea = document.querySelector(".area-child-result .price");
-let totalPriceArea = document.querySelector(".area-total .price");
 //按鈕加減功能
 let plusBtn = document.querySelectorAll(".plus");
 plusBtn.forEach((element) => {
@@ -30,23 +17,28 @@ minusBtn.forEach((element) => {
     }
   });
 });
-//顯示購票區域及填寫資料區域的切換
+//顯示購票區域及填寫資料區域的切換以及票數購買檢查
+let ticketBuying = document.querySelector("#ticket-buying");
+let ticketFillInfo = document.querySelector("#ticket-fill-info");
 function showStep(stepShowed, stepHided) {
   stepShowed.style.display = "block";
   stepHided.style.display = "none";
 }
-
+let adultValue = document.querySelector(".adult-input");
+let halfValue = document.querySelector(".half-input");
+let childValue = document.querySelector(".child-input");
 document
   .querySelector(".next-step-button")
   .addEventListener("click", function () {
     if (
-      adultValue.value == 0 &&
-      halfValue.value == 0 &&
-      childValue.value == 0
+      //檢查輸入欄是否有填數字
+      parseInt(adultValue.value) === 0 &&
+      parseInt(halfValue.value) === 0 &&
+      parseInt(childValue.value) === 0
     ) {
       showWarning("請選擇欲購買的票數");
     } else {
-      showStep(ticketFillInfo, ticketBuying);
+      showStep(ticketFillInfo, ticketBuying); // 有填數字才可以跳下一步
       updateTotalPrice();
     }
   });
@@ -63,18 +55,38 @@ function updatePrice(
   priceDisplay,
   pricePerUnit
 ) {
-  let quantity = parseInt(quantityInput.value);
-  quantityDisplay.innerHTML = `<span>${quantity}</span>`;
+  let quantity = parseInt(document.querySelector(`.${quantityInput}`).value);
+  document.querySelector(
+    `.${quantityDisplay}`
+  ).innerHTML = `<span>${quantity}</span>`;
   let price = quantity * pricePerUnit;
-  priceDisplay.innerHTML = `<span>$ ${price}</span>`;
-  return price;
+  document.querySelector(
+    `.${priceDisplay}`
+  ).innerHTML = `<span>$ ${price}</span>`;
+  return price; // 回傳價格以計算總價
 }
 //顯示並計算總價格
 function updateTotalPrice() {
+  let totalPriceArea = document.querySelector(".area-total .price");
   let totalPrice =
-    updatePrice(adultValue, adultarea, adultPriceArea, 300) +
-    updatePrice(halfValue, halfarea, halfPriceArea, 150) +
-    updatePrice(childValue, childarea, childPriceArea, 100);
+    updatePrice(
+      "adult-input",
+      "area-adult-result .quantity",
+      "area-adult-result .price",
+      300
+    ) + // 更新顯示數量以及顯示價格並回傳價格
+    updatePrice(
+      "half-input",
+      "area-half-result .quantity",
+      "area-half-result .price",
+      150
+    ) +
+    updatePrice(
+      "child-input",
+      "area-child-result .quantity",
+      "area-child-result .price",
+      100
+    );
   totalPriceArea.innerHTML = `<span>$ ${totalPrice}</span>`;
 }
 
