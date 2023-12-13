@@ -315,12 +315,18 @@ label .bar {
   width: 100%;
 }
 .news-list .news {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 1.25rem;
   border-top: 1px solid #fff;
   padding: 40px 0;
+}
+.news .news-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news .news-date {
+  position: absolute;
+  top: 10px;
 }
 .news .news-type {
   font-weight: 700;
@@ -361,6 +367,13 @@ label .bar {
     display: flex;
     align-items: center;
     column-gap: 15px;
+  }
+  .news .news-row {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .news .news-type {
+    padding: 5px 10px;
   }
 }
 /* new */

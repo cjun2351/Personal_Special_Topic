@@ -2,15 +2,24 @@
   width: 100%;
 }
 .news-list .news {
+  font-size: 1.25rem;
+  border-top: 1px solid #fff;
+  padding: 40px 0;
+}
+.news .news-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.25rem;
-  border-top: 1px solid #fff;
-  padding: 20px 0;
+}
+.news .news-date {
+  position: absolute;
+  top: 10px;
 }
 .news .news-type {
   font-weight: 700;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
 }
 .news-list .news:last-child {
   border-bottom: 1px solid #fff;
@@ -18,6 +27,10 @@
 .news-group {
   display: flex;
   column-gap: 60px;
+  align-items: center;
+}
+.news .new-brief-intro p {
+  margin: 0;
 }
 .more-button a {
   font-family: "Sen";
@@ -43,12 +56,18 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    row-gap: 5px;
   }
   .news-list .news {
     display: flex;
     align-items: center;
     column-gap: 15px;
+  }
+  .news .news-row {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .news .news-type {
+    padding: 5px 10px;
   }
 }
 /* #news {
