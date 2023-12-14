@@ -49,11 +49,12 @@
   scale: 1.1;
 }
 @media (max-width: 768px) {
-  .news-content {
+  #news {
     width: 90%;
     margin: auto;
   }
   .news-list .news-group {
+    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: start;

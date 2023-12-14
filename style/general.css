@@ -37,12 +37,8 @@ h3 {
   html {
     font-size: 12px;
   }
-  #page-title .container .title {
+  #page-title {
     width: 90%;
     margin: auto;
-  }
-  .container h2 {
-    width: 90%;
-    margin: 25px auto;
   }
 }
