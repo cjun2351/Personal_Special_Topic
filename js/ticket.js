@@ -105,7 +105,11 @@ function checkForm() {
     showWarning("請輸入完整的信用卡資料");
     return false;
   }
-  if (creditCard.value.length < 16) {
+  if (
+    creditCard.value.length != 16 ||
+    expriy.value.length != 5 ||
+    cvv.value.length != 3
+  ) {
     showWarning("請輸入正確的信用卡資料");
     return false;
   }
