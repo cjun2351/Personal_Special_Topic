@@ -5,11 +5,11 @@
 .photographer-list {
   display: flex;
   margin: 50px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 100px;
 }
-.photographer-3-list {
-  justify-content: space-between;
-}
-
 .photographer-card .pic {
   background-color: #fff;
 }
