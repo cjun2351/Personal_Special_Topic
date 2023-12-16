@@ -29,13 +29,13 @@ a {
   color: #fff;
 }
 @media (max-width: 768px) {
+  #exhibition {
+    width: 90%;
+    margin: auto;
+  }
   .exhibition-detail-content {
     display: flex;
     flex-direction: column;
-  }
-  .exhibition-intro {
-    width: 90%;
-    margin: auto;
   }
 }
 /* ticket-buying */
@@ -188,15 +188,15 @@ table button {
   display: block;
 }
 @media (max-width: 768px) {
+  #ticket-buying {
+    width: 90%;
+    margin: auto;
+  }
   .buying-step {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
-  }
-  .buying-area {
-    width: 90%;
-    margin: auto;
   }
   .buying-area input {
     width: 30px;
@@ -268,7 +268,6 @@ table button {
 .fill-info {
   width: 100%;
   margin: auto;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -301,11 +300,11 @@ table button {
   align-items: center;
 }
 .fill-info .input label {
-  width: 200px;
+  width: 110px;
   font-size: 1.25rem;
 }
 .fill-info .input input {
-  width: 100%;
+  width: 50%;
   height: 40px;
   border-radius: 5px;
   font-size: 1.25rem;
@@ -326,11 +325,7 @@ table button {
   font-size: 1rem;
 }
 @media (max-width: 768px) {
-  .buying-info-area {
-    width: 90%;
-    margin: auto;
-  }
-  .fill-info {
+  #ticket-fill-info {
     width: 90%;
     margin: auto;
   }
@@ -339,6 +334,10 @@ table button {
   }
   .fill-info .input {
     flex-direction: column;
+    align-items: start;
+  }
+  .fill-info .input input {
+    width: 100%;
   }
   .form {
     max-height: 1000px;

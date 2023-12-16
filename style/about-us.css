@@ -35,15 +35,16 @@
 }
 
 @media (max-width: 768px) {
+  #about-us {
+    width: 90%;
+    margin: auto;
+  }
   .about-us-content {
     display: flex;
     flex-direction: column;
   }
   .about-us-content:nth-child(2) {
     flex-direction: column;
-  }
-  .about-us-content .pic {
-    max-width: 90%;
   }
   .about-us-content .content {
     padding: 0;

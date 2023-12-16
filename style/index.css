@@ -238,14 +238,14 @@ label .bar {
 }
 
 @media (max-width: 768px) {
+  #about-us {
+    width: 90%;
+    margin: auto;
+  }
   .about-us-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .about-us-content .pic {
-    max-width: 90%;
-    margin: 0;
   }
   .about-us-intro {
     max-width: 80%;
@@ -354,10 +354,12 @@ label .bar {
   scale: 1.1;
 }
 @media (max-width: 768px) {
-  .news-content {
+  #news {
     width: 90%;
     margin: auto;
   }
+  /* .news-content {
+  } */
   .news-list .news-group {
     display: flex;
     flex-direction: column;

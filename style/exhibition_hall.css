@@ -24,9 +24,9 @@
   line-height: 1.5em;
 }
 @media (max-width: 768px) {
-  .banner .pic {
-    margin: auto;
+  #hall-intro {
     width: 90%;
+    margin: auto;
   }
   .intro-content .intro-para {
     max-width: 80%;
@@ -59,17 +59,21 @@
   line-height: 1.5em;
 }
 @media (max-width: 768px) {
+  #features {
+    width: 90%;
+    margin: auto;
+  }
   .feature-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
   }
-  .feature-card {
-    max-width: 90%;
-  }
   h4 {
     margin: 10px 0;
+  }
+  .feature-card {
+    max-width: 90%;
   }
 }
 /* hall-info */
@@ -125,6 +129,10 @@
   flex-grow: 1;
 }
 @media (max-width: 768px) {
+  #hall-info {
+    width: 90%;
+    margin: auto;
+  }
   .info-map-content {
     display: flex;
     flex-direction: column;
@@ -134,24 +142,24 @@
     height: 450px;
     padding: 0;
   }
-  .info-table {
+  /* .info-table {
     width: 90%;
     margin: auto;
   }
   .info-content-title {
     width: 90%;
     margin: auto;
-  }
+  } */
   .map-content {
     padding: 0;
     width: 100%;
   }
-  .map {
+  /* .map {
     width: 90%;
     margin: auto;
   }
   .map-title {
     width: 90%;
     margin: auto;
-  }
+  } */
 }

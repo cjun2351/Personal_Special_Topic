@@ -59,24 +59,15 @@
 }
 
 @media (max-width: 768px) {
-  .photographer-list {
-    margin: 0;
-  }
-  .photographer-card {
+  #outstanding {
     width: 90%;
+    margin: auto;
   }
-  .photographer-3-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
+  #newbie {
+    width: 90%;
+    margin: auto;
   }
-  .photographer-2-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
+  .photographer-list {
     margin: 0;
   }
 }
