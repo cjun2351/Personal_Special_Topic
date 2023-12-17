@@ -299,6 +299,10 @@ label .bar {
   letter-spacing: 0.1rem;
 }
 @media (max-width: 768px) {
+  #recent-exhibitions h2 {
+    width: 90%;
+    margin: 25px auto;
+  }
   .exhibition-card-list {
     display: flex;
     flex-direction: column;
@@ -307,7 +311,7 @@ label .bar {
     row-gap: 30px;
   }
   .owl-item {
-    padding: 0 25px;
+    padding: 0 20px;
   }
 }
 /* new */
@@ -471,19 +475,15 @@ textarea::placeholder {
   scale: 1.1;
 }
 @media (max-width: 768px) {
+  #contact-us {
+    width: 90%;
+    margin: auto;
+  }
   .contact-us-form .input {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     align-items: flex-start;
-  }
-  .contact-us-form form {
-    width: 90%;
-    margin: auto;
-  }
-  .submit-button {
-    width: 90%;
-    margin: auto;
   }
 }
 /* .mask {
